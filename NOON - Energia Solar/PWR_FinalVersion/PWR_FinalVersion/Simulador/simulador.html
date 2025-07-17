@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>Solar Calculator</h1>
+    <form id="solarCalculator">
+        <label for="energyUsage">Gasto mensal de energia (em R$):</label>
+        <input type="number" id="energyUsage" name="energyUsage" required><br>
+        
+        <label for="kitQuantity">Quantidade de kits de placa solar:</label>
+        <input type="number" id="kitQuantity" name="kitQuantity" required><br>
+        
+        <label for="company">Empresa de Distribuição:</label>
+        <select id="company" name="company" required>
+            <option value="" disabled selected>Selecione a empresa</option>
+            <option value="CPFL">CPFL</option>
+            <option value="CEMIG">CEMIG</option>
+            <option value="Eletropaulo">Eletropaulo</option>
+            <option value="Light">Light</option>
+            <option value="CEEE">CEEE</option>
+            <option value="Copel">Copel</option>
+            <option value="Cosern">Cosern</option>
+            <option value="Celpa">Celpa</option>
+            <option value="Energisa">Energisa</option>
+            <option value="Enel">Enel</option>
+        </select><br><br>
+        <button type="submit">Calcular</button>
+    </form>
+
+    <div id="result" style="display: none;">
+        <fieldset>
+        <h2>Resultado:</h2>
+        <p>Total kWh consumidos: <span id="totalKWh"></span></p>
+        <p>Total kWh gerados pelos kits de placa solar: <span id="totalGeneratedKWh"></span></p>
+        <p>KWh restantes após instalação dos kits: <span id="remainingKWh"></span></p>
+        <p>Custo total de energia após instalação dos kits: <span id="totalCost"></span></p>
+        <p>Lucro mensal (R$): <span id="monthlyProfit"></span></p>
+        <p>O lucro real começará em: <span id="yearsToProfit"></span> anos e <span id="remainingMonthsText"></span> meses</p>
+    </fieldset>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

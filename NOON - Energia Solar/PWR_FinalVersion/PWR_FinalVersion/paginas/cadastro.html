@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+</head>
+<body>
+
+    <header>
+        <figure class="logo">
+            <img src="../Imagem/Logo.png" alt="Logo Noon" width="157.5" height="41.5">
+        </figure>
+    </header>
+
+    <h1>Cadastro</h1>
+
+
+    <main class="corpo2">
+        <legend class="dados">Dados Pessoais:</legend>
+            <br>
+        <fieldset>
+            <label>Primeiro nome:</label>
+            <input id="nome" type="text" name="first" placeholder="Digite o primeiro nome">
+            <br><br>
+
+            <label>Sobrenome:</label>
+            <input type="text" name="second" placeholder="Digite o sobrenome">
+            <br><br>
+
+
+            <label>Data de nascimento:</label>
+            <input type="date" name="dt_nasc">
+            <br><br>
+
+            <label>Telefone:</label>
+            <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX">
+            <br><br>
+
+            <label>E-mail:</label>
+            <input type="text" name="email" placeholder="exemplo@gmail.com">
+            <br><br>
+
+            <input id="botao" type="submit" name="enviar" value="Enviar" onclick="mostrarHorario()">
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
